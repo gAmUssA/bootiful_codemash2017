@@ -1,5 +1,6 @@
 package com.codemash.caching;
 
+import com.hazelcast.client.HazelcastClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -43,7 +44,7 @@ public class DemoApplication {
 
     @Bean
     public com.hazelcast.core.HazelcastInstance getHazelcastInstance() {
-        return com.hazelcast.core.Hazelcast.newHazelcastInstance();
+        return HazelcastClient.newHazelcastClient();
     }
 
     @Component
