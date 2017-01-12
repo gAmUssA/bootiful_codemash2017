@@ -29,5 +29,6 @@ repositories {
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-cache')
+	compile('com.hazelcast:hazelcast-all:3.7.4')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
