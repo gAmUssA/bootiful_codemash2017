@@ -42,11 +42,6 @@ public class DemoApplication {
         };
     }
 
-    @Bean
-    public com.hazelcast.core.HazelcastInstance getHazelcastInstance() {
-        return HazelcastClient.newHazelcastClient();
-    }
-
     @Component
     public static class Launcher implements CommandLineRunner {
 
